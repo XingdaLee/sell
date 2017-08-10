@@ -1,5 +1,7 @@
 {
-  "presets": ["es2015", "stage-2"],
-  "plugins": ["transform-runtime"],
-  "comments": false
+    // presets预设
+    "presets": ["es2015", "stage-2"],
+    "plugins": ["transform-runtime"],
+    // comments，false表示编译后不生成注释
+    "comments": false
 }

@@ -5,5 +5,7 @@ charset = utf-8
 indent_style = space
 indent_size = 2
 end_of_line = lf
+# insert_final_newline在文件末尾追加新行
 insert_final_newline = true
+# 移出多余的空格
 trim_trailing_whitespace = true
