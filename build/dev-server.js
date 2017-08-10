@@ -22,6 +22,7 @@ var seller = appData.seller;
 var goods = appData.goods;
 var ratings = appData.ratings;
 var apiRoutes = express.Router();
+// 商家
 apiRoutes.get('/seller', function(req, res) {
     res.json({
         errno: 0,
