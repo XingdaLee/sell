@@ -16,6 +16,35 @@ var port = process.env.PORT || config.dev.port
 var proxyTable = config.dev.proxyTable
 
 var app = express()
+    // 自定义数据源
+var appData = require("../data.json");
+var seller = appData.seller;
+var goods = appData.goods;
+var ratings = appData.ratings;
+var apiRoutes = express.Router();
+apiRoutes.get('/seller', function(req, res) {
+    res.json({
+        errno: 0,
+        data: seller
+    })
+});
+// 商品
+apiRoutes.get('/goods', function(req, res) {
+    res.json({
+        errno: 0,
+        data: goods
+    })
+});
+// 评论
+apiRoutes.get('/ratings', function(req, res) {
+    res.json({
+        errno: 0,
+        data: ratings
+    })
+});
+
+app.use('/api', apiRoutes);
+// 自定义end...
 var compiler = webpack(webpackConfig)
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {
