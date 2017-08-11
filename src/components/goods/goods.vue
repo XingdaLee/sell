@@ -1,13 +1,14 @@
 <template>
-    <div>
-        header啦啦啦
-    </div>
+    <div>goods哈哈哈</div>
 </template>
 
 <script type="text/ecmascript-6">
-    export default {};
+    export default {
+
+    };
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
 
+ 
 </style>
